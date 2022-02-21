@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    background: #fbfbfb;
+}
+
+.logo {
+    width: 40px;
+}
+
+nav {
+    background: #fff;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, .2);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+    align-items: center;
+}
+
+.menu-flipper {
+    list-style-type: none;
+    margin: 0 auto;
+}
+
+.menu-flipper li {
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1em;
+}
+
+.menu-flipper li a {
+    text-decoration: none;
+    color: #232323;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.active {
+    border-bottom: 5px solid #c00fcd;
+    font-weight: bold;
+}
+
+.menu-flipper li:hover {
+    border-bottom: 5px solid #c00fcd;
+}
+
+.btn-back {
+    text-decoration: none;
+    padding: 1em 2em;
+    border-radius: 40px;
+    border: none;
+    font-size: .8em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(45deg, rgb(219, 57, 219), rgb(251, 97, 123));
+    color: #fff;
+}
+
+.btn-back:hover {
+    background-image: linear-gradient(-45deg, rgb(219, 57, 219), rgb(255, 49, 83));
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    transform: scale(1.1);
+}
+
+.container {
+    height: calc(100vh - 5em);
+    display: grid;
+    place-content: center;
+}
+
+h1 {
+    font-weight: normal;
+    width: 450px;
+    color: #fff;
+    font-size: 2em;
+    letter-spacing: 2px;
+    padding: 1em 2em;
+    background: #000000;
+    border-radius: 40px;
+    margin-bottom: 1em;
+}
+
+h1 span {
+    color: #ee7dff;
+}
+
+button {
+    padding: 1em 2em;
+    border: 2px solid #000;
+    border-radius: 30px;
+    background: transparent;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+}
+
+.container h1 {
+    font-size: 4em;
+}

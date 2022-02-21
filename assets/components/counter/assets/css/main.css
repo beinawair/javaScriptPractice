@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    background: #fbfbfb;
+}
+
+.logo {
+    width: 40px;
+}
+
+nav {
+    background: #fff;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, .2);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+    align-items: center;
+}
+
+.btn-back {
+    text-decoration: none;
+    padding: 1em 2em;
+    border-radius: 40px;
+    border: none;
+    font-size: .8em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(45deg, rgb(219, 57, 219), rgb(251, 97, 123));
+    color: #fff;
+}
+
+.btn-back:hover {
+    background-image: linear-gradient(-45deg, rgb(219, 57, 219), rgb(255, 49, 83));
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    transform: scale(1.1);
+}
+
+.container {
+    display: grid;
+    place-content: center;
+    height: calc(100vh - 5em);
+    text-align: center;
+    align-items: center;
+}
+
+.container h1 {
+    font-size: 4em;
+    font-weight: normal;
+    margin-bottom: .2em;
+    letter-spacing: 1px;
+    color: rgb(89, 89, 89);
+}
+
+.container span {
+    font-size: 7em;
+    font-weight: bold;
+    color: darkslateblue;
+    margin-bottom: .3em;
+}
+
+.btn {
+    padding: 1em 2em;
+    margin: 0 1em;
+    border-radius: 20px;
+    border: none;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    background: #7b7b7b;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-image: linear-gradient(-45deg, rgb(219, 57, 219), rgb(255, 49, 83));
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
