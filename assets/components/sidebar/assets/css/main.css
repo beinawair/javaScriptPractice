@@ -1,1 +1,127 @@
-/* on progress */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+}
+
+ul {
+    list-style-type: none;
+}
+
+.logo {
+    width: 40px;
+    justify-content: center;
+}
+
+.sidebar-toggle {
+    position: fixed;
+    top: 2em;
+    right: 3em;
+    font-size: 2em;
+    background: transparent;
+    border-color: transparent;
+    color: #232323;
+    transition: all .4s ease;
+    cursor: pointer;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+.sidebar-toggle:hover {
+    color: crimson;
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 1.5em;
+}
+
+.close-btn {
+    font-size: 1.75em;
+    background: transparent;
+    border-color: transparent;
+    color: #232323;
+    transition: all .4s ease;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: crimson;
+    transform: rotate(360deg);
+}
+
+.menu a {
+    display: block;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    padding: 1em 1.5em;
+    color: #232323;
+    transition: all .4s ease;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background: rgb(255, 143, 143);
+    padding-left: 1em;
+}
+
+.social {
+    display: flex;
+    justify-self: center;
+    padding-bottom: 2em;
+}
+
+.social a {
+    font-size: 1.5em;
+    margin: 0 .5em;
+    color: #232323;
+    transition: all .4s ease;
+}
+
+.social a:hover {
+    color: crimson;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    row-gap: 1em;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, .2);
+    transition: all .4s ease;
+    transform: translate(-100%);
+}
+
+.show {
+    transform: translate(0);
+}
+
+@media screen and (min-width: 676px) {
+    .sidebar {
+        width: 400px;
+    }
+}
