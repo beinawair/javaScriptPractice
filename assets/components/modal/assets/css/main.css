@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+}
+
+ul {
+    list-style-type: none;
+}
+
+.hero {
+    min-height: 100vh;
+    background: url('../../img/bg-img.jpg') center/cover no-repeat;
+    display: grid;
+    place-content: center;
+}
+
+.banner {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 3em 5em;
+    border-radius: 20px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, .2);
+    text-align: center;
+    width: 40vw;
+    min-width: 540px;
+}
+
+.banner h1 {
+    font-size: 2em;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1em;
+}
+
+.btn {
+    padding: 1em 2em;
+    border-radius: 10px;
+    border: none;
+    font-size: 1em;
+    letter-spacing: 1px;
+    background: rgba(220, 20, 60, 0.8);
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-image: linear-gradient(45deg, crimson, rgb(222, 11, 222));
+    transform: scale(1.05);
+    transition: all .4s ease;
+}
+
+.modal-overlay {
+    position: fixed;
+    background: rgba(0, 0, 0, .5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+    transition: all .4s ease;
+    visibility: hidden;
+    z-index: -10;
+    opacity: 0;
+    transform: scale(0);
+}
+
+.modal-container {
+    background: #fff;
+    padding: 3em 5em;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    font-size: 1.2em;
+    background: transparent;
+    border: none;
+    color: rgba(220, 20, 60, 0.8);
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.close-btn:hover {
+    animation: swing .4s forwards;
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+/* show modal */
+.open-modal {
+    visibility: visible;
+    z-index: 10;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
