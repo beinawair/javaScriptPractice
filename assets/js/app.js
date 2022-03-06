@@ -79,6 +79,16 @@ const list = [
         url: './assets/components/menuPage/index.html'
 
     },
+    {
+        class: 'item 9',
+        img: './imgs/img-card/09-preloader.jpg',
+        alt: 'slide i',
+        name: 'Preloader Page',
+        desc: 'Build a preloader page video',
+        number: '09',
+        url: './assets/components/preLoader/index.html'
+
+    },
 ];
 
 const menuBtn = document.querySelector('.menu-btn');
