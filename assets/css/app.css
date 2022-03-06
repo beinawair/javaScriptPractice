@@ -19,17 +19,15 @@ body {
 /* ---------- navbar ---------- */
 
 .nav-container {
-    display: grid;
-    place-content: center;
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     background: #fff;
-    height: 6em;
+    height: 4em;
     box-shadow: 2px 2px 2px solid rgba(0, 0, 0, .2);
-    margin: 0 auto;
     padding: 1em 2em;
     z-index: 1;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-
 }
 
 .menu-container {
@@ -42,6 +40,14 @@ body {
     font-size: 1.5em;
     font-weight: bold;
     letter-spacing: 4px;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background: #fff;
+    height: 100vh;
 }
 
 .menu-container ul {

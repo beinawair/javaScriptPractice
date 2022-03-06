@@ -13,3 +13,125 @@ body {
 }
 
 /* styling starts here */
+
+.section-center {
+    padding: 0 2em;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10em;
+    margin-bottom: 1.4em;
+    padding-top: 2em;
+}
+
+.title h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.underline {
+    margin-top: .5em;
+    height: 4px;
+    width: 60px;
+    background: #232323;
+    transition: all .5s ease;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3em;
+    gap: .6em;
+}
+
+.filter-btn {
+    padding: .5em 1.1em;
+    border: 1px solid #232323;
+    border-radius: 10px;
+    background: transparent;
+    color: #232323;
+    transition: all .5s ease;
+    text-transform: capitalize;
+}
+
+.filter-btn:hover {
+    color: #fff;
+    background: #232323;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4em;
+}
+
+.menu-item img {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, .2);
+    margin-bottom: 1.5em;
+}
+
+.item-info {
+    width: 100%;
+    max-width: 300px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5em;
+    padding: .5em 0;
+    border-bottom: 1px solid #bfbfbf;
+}
+
+header h4 {
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+header span {
+    color: crimson;
+}
+
+.item-info p {
+    font-size: 1em;
+    letter-spacing: 1px;
+    color: #636363;
+}
+
+@media screen and (min-width: 675px) {
+    .section-center {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 975px) {
+    .section-center {
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1175px) {
+    .section-center {
+        padding: 0 1em;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
